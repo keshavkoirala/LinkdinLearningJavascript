@@ -1,1 +1,295 @@
 
+You are given a set of vaiable containing different data about a book
+const bookTitle= "Alice new Adventure"
+const bookAuthor="Lee Curtus"
+const bookPubYear=1999
+const bookISBN=999989099
+
+Task:
+  Make an object constructor for Books Objects 
+  The constructor must have properties for title, author,ISBN and publicationYear
+
+Result:
+// JavaScript code​​​​​​‌‌​​‌‌‌​‌‌​​​‌​‌​‌‌‌‌‌​‌​ below
+// Write your answer here, and then test your code.
+// Your job is to implement the findLargest() method.
+
+// Change these boolean values to control whether you see 
+// the expected answer and/or hints.
+const showExpectedResult = true;
+const showHints = false;
+
+const bookTitle = "Alice's Adventures in Wonderland"
+const bookAuthor = "Lewis Carroll"
+const bookPubYear = 1865
+const bookISBN = 9798369203415
+
+// Code goes here
+class Book{
+    constructor(
+        bookTitle,
+        bookAuthor,
+        bookISBN,
+        bookPubYear,
+    ){
+        this.title=bookTitle,
+        this.author=bookAuthor,
+        this.publicationYear=bookPubYear,
+        this.ISBN=bookISBN
+    }
+
+
+MCQS
+
+Question 1 of 15
+Given the code below, how do you access the property named in let propName?
+
+let propName = "color"
+const myObject = {
+    ID = 3,<br />
+    color = "pink",
+    propLength = 4,
+    use = false
+};
+
+
+Using bracket notation:
+myObject.[propName]
+
+Using the getProperty() method:
+myObject.getProperty(propName)
+
+Using dot notation:
+myObject.propName
+Using bracket notation:
+myObject[propName]
+
+Correct
+
+
+Question 2 of 15
+In the following object, what is the code in the second line called?
+
+const myObject = {
+    color: "pink"
+};
+
+An object attribute defined using a key/value pair.
+
+Incorrect
+
+
+
+An object argument with an argument name and an argument value.
+An object variable defined using a key/value pair.
+
+Incorrect
+
+
+An object property with a property name and a property value.
+
+Correct
+
+
+Question 3 of 15
+Why is the best-practice to place objects inside constants?
+
+
+So the object and its properties is unchangeable.
+So the object isn't accidentally altered or overwritten.
+
+Correct
+
+
+
+So the object can be used anywhere in the code.
+
+So the object remains in a constant place in the code.
+Question 4 of 15
+Which of the below object property names are not valid?
+
+const myObject = {
+    propName = "property",         // line 1
+    prop-name = "hyphenated",  // line 2
+    3rdProp = "numbered",          // line 3
+    $prop = "dollar",                      // line 4
+    %prop = "percentage",           // line 5
+    prop name = "space"              // line 6
+};
+
+
+Lines 3, 4, and 5
+
+Lines 3, 4, 5, and 6
+Lines 2, 3, 5, and 6
+
+Correct
+
+
+
+Lines 2, 4, 5, and 6
+Question 5 of 15
+How do you access an object in JavaScript?
+
+
+Call the object using the getObject([object name]) method
+
+Call the object using bracket notation: [object name]
+
+Call the object using the new keyword.
+Call the object by naming its container.
+
+Correct
+
+
+Question 6 of 15
+Can an object created from a class be given the same name as the class?
+
+
+Yes: The object is a different data type from the class and they can both have the same name.
+
+No: If you give an object the same name, it will be ignored by the browser.
+
+Yes: If the class is defined using a var or a let, you can create an object with the same name without conflict.
+No: If the class is a constant, this will cause an error. If the class is not a constant, the new object will overwrite the class.
+
+Correct
+
+
+Question 7 of 15
+How do you define an object in JavaScript?
+
+
+Create a variable, give it a name, and assign it an object using square brackets:
+const myObject = [
+  // Properties and methods go here.
+];
+
+Create a variable, give it a name, and assign it an object using parentheses:
+const myObject = (
+  // Properties and methods go here.
+);
+
+Create a variable, give it a name, and assign it an object using the "new" keyword:
+const myObject = new Object(
+  // Properties and methods go here.
+);
+Create a variable, give it a name, and assign it an object using curly brackets:
+const myObject = {
+  // Properties and methods go here.
+};
+
+Correct
+
+
+Question 8 of 15
+What does the this keyword refer to in a class?
+
+
+this refers to the current class itself.
+
+this refers to the class constructor.
+this refers to the current object created from the class.(correct)
+this refers to the current property.
+
+Question 9 of 15
+Where do you go to find official documentation and code examples for standard built in (global) objects?
+
+
+Google or your preferred search engine
+the W3Schools reference for standard built-in objects
+the MDN Web Docs for standard built-in objects(correct)
+the W3C reference for standard built-in objects
+
+Question 10 of 15
+How do you create a new object from a class?
+
+Using the new keyword, naming the class, and passing the properties as parameters.
+
+Correct
+
+
+Using the newObject method, naming the class, and passing the properties as parameters.
+
+Using the new Object phrase, naming the class, and passing the properties as parameters.
+
+Creating a new variable and setting it equal to the class name followed by curly brackets wrapped around the properties.
+Question 11 of 15
+What is one advantage to using a class over an object constructor method?
+
+
+Classes are easier to understand.
+Classes can be extended.
+
+Correct
+
+
+
+Classes can be added to their own JavaScript module.
+
+Classes are less likely to cause errors.
+Question 12 of 15
+What is the established convention for formatting objects?
+
+
+Properties are listed on one line, methods on their own separate lines.
+
+All properties and methods are listed on one line.
+
+Properties are listed on their own separate line, methods are listed on one line.
+All properties and methods are listed on their own separate line.
+
+Correct
+
+
+Question 13 of 15
+What is the difference between a function and a method?
+
+"functions" and "methods" are two words for the same thing.
+
+Incorrect
+
+
+A function is a function within an object. A method is a stand-alone function.
+
+Incorrect
+
+
+A function is a stand-alone function. A method is a function within an object.
+
+Correct
+
+
+
+A function is declared using the function keyword. A method is declared using the method keyword.
+Question 14 of 15
+Can you use arrow functions to create object methods?
+
+No, object methods are defined using function declarations.
+
+Incorrect
+
+
+Yes, arrow functions can be used.
+
+Incorrect
+
+
+No, object methods must be declared using function expressions or the method definition shorthand.
+
+Correct
+
+
+
+Yes, arrow functions can be used, but only when they are called in as an external function.
+Question 15 of 15
+When creating a class, the prototype methods are added inside the constructor method.
+
+FALSE
+
+Correct
+
+Class prototype methods are added after the constructor method as discrete named methods.
+
+
+TRUE
